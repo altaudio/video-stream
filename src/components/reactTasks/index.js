@@ -1,15 +1,15 @@
 import React from 'react'
-import Hello from './hello'
+import _ from 'lodash'
+import VideoComponent from './videoComponent'
+import videoFiles from './videoFiles'
 
 
 export default () => {
   return (
+
     <div>
-      <p>Question 1 Answer</p>
-      <Hello />
-
-      <p>Question 2 Answer</p>
-
+      {_.map(videoFiles, (file) => { return <VideoComponent vidData={file} /> })}
     </div>
+
   )
 }
