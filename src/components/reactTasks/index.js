@@ -6,9 +6,7 @@ export default () => {
   return (
 
     <div>
-      <VideoComponent vidData={videoFiles[0]} />
-      <VideoComponent vidData={videoFiles[1]} />
-      <VideoComponent vidData={videoFiles[2]} />
+      {_.map(videoFiles, (file) => { return <VideoComponent vidData={file} /> })}
     </div>
 
   )
