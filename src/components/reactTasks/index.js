@@ -1,10 +1,6 @@
 import React from 'react'
-import Hello from './hello'
 import VideoComponent from './videoComponent'
 import videoFiles from './videoFiles'
-
-
-
 
 export default () => {
   return (
